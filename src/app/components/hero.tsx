@@ -124,7 +124,7 @@ export function Hero() {
               <Button
                 onClick={() => navigate('/contact')}
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-6 text-lg"
+                className="border-2 border-white text-slate-900 hover:bg-white hover:text-slate-900 px-8 py-6 text-lg"
               >
                 Contact Us
               </Button>
