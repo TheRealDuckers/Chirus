@@ -152,65 +152,7 @@ export function Hero() {
             </motion.div>
           </div>
 
-          {/* Right content - Feature cards */}
-          <div className="hidden lg:grid grid-cols-2 gap-4">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/20 transition-colors"
-            >
-              <div className="w-12 h-12 bg-teal-600 rounded-lg flex items-center justify-center mb-4">
-                <Zap className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-white mb-2">Rapid Results</h3>
-              <p className="text-gray-300 text-sm">
-                Get accurate diagnostic results in minutes, not hours
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/20 transition-colors mt-8"
-            >
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-                <Award className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-white mb-2">CE Certified</h3>
-              <p className="text-gray-300 text-sm">
-                All equipment meets rigorous UK and EU standards
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/20 transition-colors"
-            >
-              <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
-                <Users className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-white mb-2">Expert Support</h3>
-              <p className="text-gray-300 text-sm">
-                Dedicated technical support and training for your team
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              className="bg-gradient-to-br from-teal-600/20 to-blue-600/20 backdrop-blur-md border border-teal-400/30 rounded-2xl p-6 mt-8"
-            >
-              <div className="text-2xl font-bold text-white mb-1">100%</div>
-              <p className="text-gray-300 text-sm">
-                Customer satisfaction in UK healthcare sector
-              </p>
-            </motion.div>
-          </div>
+          
         </div>
       </div>
     </section>
