@@ -1,8 +1,8 @@
-name: Put this zesty website on the zesty web
+name: deploy  to the zesty web 
 
 on:
   push:
-    branches: ["main"] # Change to your branch name if different
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -11,12 +11,15 @@ permissions:
 
 jobs:
   build_and_deploy:
+    environment:
+      name: github-pages  # <--- THIS IS THE MISSING PART
+      url: ${{ steps: deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Node (node being set up)
+      - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -26,7 +29,7 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build # This creates your /dist folder
+        run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -34,7 +37,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Tells GitHub to only deploy the dist folder
+          path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
